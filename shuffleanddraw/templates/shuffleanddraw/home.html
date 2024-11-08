@@ -6,9 +6,9 @@
     <title>Shuffle and Draw</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-100">
     <!-- Top Navigation Bar -->
-    <header class="bg-emerald-800 text-white">
+    <header class="bg-black text-white">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between h-16">
                 <!-- Logo/Title -->
@@ -21,7 +21,7 @@
                     <div class="relative">
                         <input type="text" 
                                placeholder="Search for cards..." 
-                               class="w-full px-4 py-2 text-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
+                               class="w-full px-4 py-2 text-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-600"
                         >
                         <button class="absolute right-2 top-1/2 transform -translate-y-1/2">
                             <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -32,74 +32,132 @@
                 </div>
 
                 <!-- Navigation Links -->
-                <div class="flex items-center space-x-4">
-                    <a href="#" class="hover:text-emerald-200">Cart</a>
-                    <a href="#" class="hover:text-emerald-200">Login</a>
+                <div class="flex items-center space-x-6">
+                    <a href="#" class="hover:text-gray-300">Cart</a>
+                    <a href="#" class="hover:text-gray-300">Login</a>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- Game Categories -->
-    <div class="container mx-auto px-4 py-8">
+    <div class="container mx-auto px-4 py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Final Fantasy Section -->
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <h2 class="text-2xl font-bold text-emerald-800 mb-4">Final Fantasy</h2>
-                <ul class="space-y-2">
-                    <li><a href="#" class="text-gray-600 hover:text-emerald-600 block">Singles</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-emerald-600 block">Decks</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-emerald-600 block">Boosters</a></li>
-                </ul>
-                <div class="mt-4">
-                    <img src="/api/placeholder/300/200" alt="Final Fantasy Cards" class="w-full h-40 object-cover rounded-lg">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <!-- Header Image -->
+                <div class="h-48 overflow-hidden">
+                    <!-- Final Fantasy Banner -->
+                    <img src="media/banners/final_fantasy.jpg" alt="Final Fantasy Banner" class="w-full h-full object-cover">
+                </div>
+                <!-- Content -->
+                <div class="p-6 space-y-6">
+                    <!-- Links -->
+                    <div class="space-y-3 pt-4 text-center">
+                        <a href="#" class="block text-gray-700 hover:text-black font-medium py-2 transition-colors">
+                            Singles
+                        </a>
+                        <a href="#" class="block text-gray-700 hover:text-black font-medium py-2 transition-colors">
+                            Decks
+                        </a>
+                        <a href="#" class="block text-gray-700 hover:text-black font-medium py-2 transition-colors">
+                            Boosters
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <!-- Magic The Gathering Section -->
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <h2 class="text-2xl font-bold text-emerald-800 mb-4">Magic: The Gathering</h2>
-                <ul class="space-y-2">
-                    <li><a href="#" class="text-gray-600 hover:text-emerald-600 block">Singles</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-emerald-600 block">Decks</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-emerald-600 block">Boosters</a></li>
-                </ul>
-                <div class="mt-4">
-                    <img src="/api/placeholder/300/200" alt="Magic The Gathering Cards" class="w-full h-40 object-cover rounded-lg">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <!-- Header Image -->
+                <div class="h-48 overflow-hidden">
+                    <img src="media/banners/magic.jpg" alt="Magic The Gathering Banner" class="w-full h-full object-cover">
+                </div>
+                <!-- Content -->
+                <div class="p-6 space-y-6">
+                    <!-- Links -->
+                    <div class="space-y-3 pt-4">
+                        <a href="#" class="block text-gray-700 hover:text-black font-medium py-2 transition-colors">
+                            Singles →
+                        </a>
+                        <a href="#" class="block text-gray-700 hover:text-black font-medium py-2 transition-colors">
+                            Decks →
+                        </a>
+                        <a href="#" class="block text-gray-700 hover:text-black font-medium py-2 transition-colors">
+                            Boosters →
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <!-- Star Wars Section -->
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <h2 class="text-2xl font-bold text-emerald-800 mb-4">Star Wars</h2>
-                <ul class="space-y-2">
-                    <li><a href="#" class="text-gray-600 hover:text-emerald-600 block">Singles</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-emerald-600 block">Decks</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-emerald-600 block">Boosters</a></li>
-                </ul>
-                <div class="mt-4">
-                    <img src="/api/placeholder/300/200" alt="Star Wars Cards" class="w-full h-40 object-cover rounded-lg">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <!-- Header Image -->
+                <div class="h-48 overflow-hidden">
+                    <img src="/api/placeholder/400/300" alt="Star Wars Banner" class="w-full h-full object-cover">
+                </div>
+                <!-- Title Bar -->
+                <div class="bg-black text-white py-3 px-6">
+                    <h2 class="text-xl font-bold">Star Wars</h2>
+                </div>
+                <!-- Content -->
+                <div class="p-6 space-y-6">
+                    <!-- Featured Cards Preview -->
+                    <div class="grid grid-cols-2 gap-2">
+                        <img src="/api/placeholder/150/200" alt="SW Card 1" class="rounded">
+                        <img src="/api/placeholder/150/200" alt="SW Card 2" class="rounded">
+                    </div>
+                    <!-- Links -->
+                    <div class="space-y-3 border-t pt-4">
+                        <a href="#" class="block text-gray-700 hover:text-black font-medium py-2 transition-colors">
+                            Singles →
+                        </a>
+                        <a href="#" class="block text-gray-700 hover:text-black font-medium py-2 transition-colors">
+                            Decks →
+                        </a>
+                        <a href="#" class="block text-gray-700 hover:text-black font-medium py-2 transition-colors">
+                            Boosters →
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <!-- Yu-Gi-Oh Section -->
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <h2 class="text-2xl font-bold text-emerald-800 mb-4">Yu-Gi-Oh!</h2>
-                <ul class="space-y-2">
-                    <li><a href="#" class="text-gray-600 hover:text-emerald-600 block">Singles</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-emerald-600 block">Decks</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-emerald-600 block">Boosters</a></li>
-                </ul>
-                <div class="mt-4">
-                    <img src="/api/placeholder/300/200" alt="Yu-Gi-Oh Cards" class="w-full h-40 object-cover rounded-lg">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <!-- Header Image -->
+                <div class="h-48 overflow-hidden">
+                    <img src="/api/placeholder/400/300" alt="Yu-Gi-Oh Banner" class="w-full h-full object-cover">
+                </div>
+                <!-- Title Bar -->
+                <div class="bg-black text-white py-3 px-6">
+                    <h2 class="text-xl font-bold">Yu-Gi-Oh!</h2>
+                </div>
+                <!-- Content -->
+                <div class="p-6 space-y-6">
+                    <!-- Featured Cards Preview -->
+                    <div class="grid grid-cols-2 gap-2">
+                        <img src="/api/placeholder/150/200" alt="YGO Card 1" class="rounded">
+                        <img src="/api/placeholder/150/200" alt="YGO Card 2" class="rounded">
+                    </div>
+                    <!-- Links -->
+                    <div class="space-y-3 border-t pt-4">
+                        <a href="#" class="block text-gray-700 hover:text-black font-medium py-2 transition-colors">
+                            Singles →
+                        </a>
+                        <a href="#" class="block text-gray-700 hover:text-black font-medium py-2 transition-colors">
+                            Decks →
+                        </a>
+                        <a href="#" class="block text-gray-700 hover:text-black font-medium py-2 transition-colors">
+                            Boosters →
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-
     <!-- Footer -->
-    <footer class="bg-emerald-800 text-white py-6 mt-8">
+    <footer class="bg-black text-white py-6 mt-12">
         <div class="container mx-auto px-4">
             <div class="text-center">
                 <p>&copy; 2024 Shuffle & Draw. All rights reserved.</p>

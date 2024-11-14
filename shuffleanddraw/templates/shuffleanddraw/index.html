@@ -1,0 +1,211 @@
+{% extends 'shuffleanddraw/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Game Categories -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Final Fantasy Section -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <!-- Header Image -->
+                <div class="h-48 overflow-hidden">
+                    <img src="media/banners/final_fantasy.jpg" alt="Final Fantasy Banner" class="w-full h-full object-cover">
+                </div>
+                <!-- Content -->
+                <div class="p-6">
+                    <!-- Links -->
+                    <div class="space-y-4">
+                        <a href="#" class="block bg-gray-50 hover:bg-black hover:text-white text-center rounded-lg p-4 transition-all duration-300 transform hover:scale-105 shadow-sm hover:shadow-md">
+                            <span class="font-semibold">Singles</span>
+                            <div class="text-sm mt-1 text-gray-500 group-hover:text-gray-300">Individual cards</div>
+                        </a>
+                        <a href="#" class="block bg-gray-50 hover:bg-black hover:text-white text-center rounded-lg p-4 transition-all duration-300 transform hover:scale-105 shadow-sm hover:shadow-md">
+                            <span class="font-semibold">Decks</span>
+                            <div class="text-sm mt-1 text-gray-500 group-hover:text-gray-300">Starter decks</div>
+                        </a>
+                        <a href="#" class="block bg-gray-50 hover:bg-slate-800 hover:text-white text-center rounded-lg p-4 transition-all duration-300 transform hover:scale-105 shadow-sm hover:shadow-md">
+                            <span class="font-semibold">Boosters</span>
+                            <div class="text-sm mt-1 text-gray-500 group-hover:text-gray-300">Booster packs</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Magic The Gathering Section -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="h-48 overflow-hidden">
+                    <img src="media/banners/magic.jpg" alt="Magic The Gathering Banner" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="space-y-4">
+                        <!-- <a href="#" class="block bg-gray-50 hover:bg-slate-800 hover:text-white text-center rounded-lg p-4 transition-all duration-300 transform hover:scale-105 shadow-sm hover:shadow-md">
+                            <span class="font-semibold">Singles</span>
+                            <div class="text-sm mt-1 text-gray-500 group-hover:text-gray-300">Individual cards</div>
+                        </a> -->
+                        <a href="#" class="block bg-gray-50 hover:bg-slate-800 hover:text-white text-center rounded-lg p-4 transition-all duration-300 transform hover:scale-105 shadow-sm hover:shadow-md">
+                            <span class="font-semibold">Decks</span>
+                            <div class="text-sm mt-1 text-gray-500 group-hover:text-gray-300">Starter decks</div>
+                        </a>
+                        <a href="#" class="block bg-gray-50 hover:bg-slate-800 hover:text-white text-center rounded-lg p-4 transition-all duration-300 transform hover:scale-105 shadow-sm hover:shadow-md">
+                            <span class="font-semibold">Boosters</span>
+                            <div class="text-sm mt-1 text-gray-500 group-hover:text-gray-300">Booster packs</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Star Wars Section
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="h-48 overflow-hidden">
+                    <img src="/media/banners/starwars.jpeg" alt="Star Wars Banner" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="space-y-4">
+                        <a href="#" class="block bg-gray-50 hover:bg-slate-800 hover:text-white text-center rounded-lg p-4 transition-all duration-300 transform hover:scale-105 shadow-sm hover:shadow-md">
+                            <span class="font-semibold">Singles</span>
+                            <div class="text-sm mt-1 text-gray-500 group-hover:text-gray-300">Individual cards</div>
+                        </a>
+                        <a href="#" class="block bg-gray-50 hover:bg-slate-800 hover:text-white text-center rounded-lg p-4 transition-all duration-300 transform hover:scale-105 shadow-sm hover:shadow-md">
+                            <span class="font-semibold">Decks</span>
+                            <div class="text-sm mt-1 text-gray-500 group-hover:text-gray-300">Starter decks</div>
+                        </a>
+                        <a href="#" class="block bg-gray-50 hover:bg-slate-800 hover:text-white text-center rounded-lg p-4 transition-all duration-300 transform hover:scale-105 shadow-sm hover:shadow-md">
+                            <span class="font-semibold">Boosters</span>
+                            <div class="text-sm mt-1 text-gray-500 group-hover:text-gray-300">Booster packs</div>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Yu-Gi-Oh Section -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="h-48 overflow-hidden">
+                    <img src="/media/banners/yugioh.jpg" alt="Yu-Gi-Oh Banner" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="space-y-4">
+                        <a href="#" class="block bg-gray-50 hover:bg-slate-800 hover:text-white text-center rounded-lg p-4 transition-all duration-300 transform hover:scale-105 shadow-sm hover:shadow-md">
+                            <span class="font-semibold">Singles</span>
+                            <div class="text-sm mt-1 text-gray-500 group-hover:text-gray-300">Individual cards</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Recently Added Section -->
+<section class="container mx-auto px-4 py-8">
+    <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-bold">Recently Added</h2>
+        <a href="#" class="text-slate-800 hover:text-slate-600 font-medium flex items-center">
+            View All
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg>
+        </a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+            <div class="relative">
+                <img src="/api/placeholder/300/200" alt="Card Name" class="w-full h-48 object-cover">
+                <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded text-sm font-medium">
+                    NEW
+                </div>
+            </div>
+            <div class="p-4">
+                <div class="flex justify-between items-start mb-2">
+                    <div>
+                        <h3 class="font-semibold text-lg">Chandra, Fire Artisan</h3>
+                        <p class="text-gray-600 text-sm">Magic: The Gathering</p>
+                    </div>
+                    <span class="text-sm text-gray-500">2 days ago</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-lg font-bold">$24.99</span>
+                    <button class="bg-slate-800 text-white px-4 py-2 rounded-lg hover:bg-slate-700 transition-colors duration-200">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+            <div class="relative">
+                <img src="/api/placeholder/300/200" alt="Card Name" class="w-full h-48 object-cover">
+                <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded text-sm font-medium">
+                    NEW
+                </div>
+            </div>
+            <div class="p-4">
+                <div class="flex justify-between items-start mb-2">
+                    <div>
+                        <h3 class="font-semibold text-lg">Blue-Eyes White Dragon</h3>
+                        <p class="text-gray-600 text-sm">Yu-Gi-Oh!</p>
+                    </div>
+                    <span class="text-sm text-gray-500">3 days ago</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-lg font-bold">$19.99</span>
+                    <button class="bg-slate-800 text-white px-4 py-2 rounded-lg hover:bg-slate-700 transition-colors duration-200">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+            <div class="relative">
+                <img src="/api/placeholder/300/200" alt="Card Name" class="w-full h-48 object-cover">
+                <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded text-sm font-medium">
+                    NEW
+                </div>
+            </div>
+            <div class="p-4">
+                <div class="flex justify-between items-start mb-2">
+                    <div>
+                        <h3 class="font-semibold text-lg">Cloud Strife</h3>
+                        <p class="text-gray-600 text-sm">Final Fantasy</p>
+                    </div>
+                    <span class="text-sm text-gray-500">4 days ago</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-lg font-bold">$15.99</span>
+                    <button class="bg-slate-800 text-white px-4 py-2 rounded-lg hover:bg-slate-700 transition-colors duration-200">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+            <div class="relative">
+                <img src="/api/placeholder/300/200" alt="Card Name" class="w-full h-48 object-cover">
+                <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded text-sm font-medium">
+                    NEW
+                </div>
+            </div>
+            <div class="p-4">
+                <div class="flex justify-between items-start mb-2">
+                    <div>
+                        <h3 class="font-semibold text-lg">Darth Vader</h3>
+                        <p class="text-gray-600 text-sm">Star Wars</p>
+                    </div>
+                    <span class="text-sm text-gray-500">5 days ago</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="text-lg font-bold">$12.99</span>
+                    <button class="bg-slate-800 text-white px-4 py-2 rounded-lg hover:bg-slate-700 transition-colors duration-200">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
